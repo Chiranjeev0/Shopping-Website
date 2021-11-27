@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Products - Shopping Website</title>
+        <link rel="stylesheet" href="Stylesheet.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;900&display=swap" crossorigin="anonymous" rel="stylesheet">
+    </head>
+        <body>
+            
+            <div class="header">
+        <div class="container">
+            <div class = "navbar"> 
+                <div class ="logo">
+                    <img src="images/logo.png" alt="" width="125px">
+                
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="Items.html">Items</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="Account.html">Account</a></li>
+                        
+                    </ul>
+                </nav>
+                <a href="cart.html">
+                <img src="images/cart.png" alt="" width="30px" height="30px">
+                </a>
+             </div>
+    </div>
+    </div>
+
+   <!------------------ Account-page---------------------------->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+               
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="signin()">Login</span>
+                        <span onclick="signup()">Register</span>
+                        <hr id="Indicator">
+                    </div> 
+
+                    <form id="login">
+                       <input type="text" placeholder="Username">
+                       <input type="password" placeholder="Password">
+                       <button onclick="myfunction()" class="btn">Login</button>
+                       
+                       
+                
+                       <button onclick="forgot()"><a href="">Forgot password?</a></button>
+                       <p>OR</p>
+                       <button onclick="" class="btn"><a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin" >Log in with Google </a></button>
+                       <button onclick="" class="btn"><a href="https://www.facebook.com/">Log in with Facebook</a></button>
+                        
+                    </form>
+
+                    <form id="register">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="E-mail">
+                        <input type="tel" placeholder="Phone No.">
+                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Confirm Password">
+                        <button onclick="myfunction2()" class="btn">Register</button>
+                         
+                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------------- footer ---------------------------->
+      
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <img src="images/logo.png" alt="" >
+                    
+                    <p>“The great thing about the Internet isn't that you can reconnect with old friends
+                         or stay up to date with developing world events or send pictures of newborns immediately 
+                         around the world. It is simply that you can log on to Shopping Website from anywhere and 
+                         order fresh underwear immediately after seeing your life flash before your eyes.” </p>
+                </div>
+
+               <div class="footer-col-2">
+                   <h3>Useful Links</h3>
+                   <ul>
+                       <li>Coupons</li>
+                       <li>Blog Post</li>
+                       <li>Return Policy</li>
+                       <li>Join Affiliate</li> 
+                   </ul>
+               </div> 
+               <div class="footer-col-3">
+                   <h3>Follow Us</h3>
+                   <ul>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://twitter.com/i/flow/login">Twitter</a></li>
+                    <li><a href="https://www.youtube.com/">Youtube</a></li>
+                   </ul>
+                </div>
+            
+            </div>
+        <hr>
+            <p class="copyright">Copyright 2021 - Reserved all rights "By Chiranjeev" </p>
+    </div>
+
+    <!----------------JS for toggle form------------------->
+    <script>
+        var login = document.getElementById("login");
+        var register = document.getElementById("register")
+        var Indicator = document.getElementById("Indicator")
+
+        function signup(){
+            register.style.transform = "translateX(0px)";
+            login.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+
+        }
+
+        function signin(){
+            register.style.transform = "translateX(400px)";
+            login.style.transform = "translateX(400px)";
+            Indicator.style.transform = "translateX(0px)";
+
+        }
+        function myfunction(){
+            alert("Login Successfully");
+        }
+        function myfunction2(){
+            alert("All Details registered Successfuly");
+        }
+        function forgot(){
+            alert("If you can't remember your password then go to HELL");
+        }
+
+    </script>
+
+    </body>
+</html>
+
